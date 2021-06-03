@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail:400' rel='stylesheet' type='text/css'>
+</head>
+
+<body id ="gameModule">
+    <header> Tic Tac Toe </header>
+    <div id = "leftMargin"></div>
+    <div id = "rightMargin"></div>
+    <h1 id = "displayTurn" class ="displayTurn"></h1>
+    <section class = "buttonArea"><button id="resetButton">Reset</button><button id="restartButton">Restart</button></section>
+    <div id = "game" class = "gameboard">
+     
+      
+      <button id ="1" class = "box"><span  id ="1" ></span></button>  
+      <button id ="2"  class = "box"><span id ="2"></span></button>  
+      <button id ="3"  class = "box"><span id ="3"></span></button>  
+      <button id ="4"  class = "box"><span id ="4"></span></button>  
+      <button id ="5"  class = "box"><span id ="5"></span></button>  
+      <button id ="6"  class = "box"><span id ="6"></span></button>  
+      <button id ="7"  class = "box"><span id ="7"></span></button>  
+      <button id ="8"  class = "box"><span id ="8"></span></button>  
+      <button id ="9"  class = "box"><span id ="9"></span></button> 
+      
+     
+    </div>
+    <footer></footer>
+   
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"></span>
+        <p id="Player1"></p>
+      </div>
+    
+    </div>
+    <div id="myModal2" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"></span>
+        <p id="Player2"></p>
+      </div>
+    
+    </div>
+    <div id="myModal3" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close"></span>
+        <p>It Was a Tie!!</p>
+      </div>
+    
+    </div>
+    
+    <div id="InitialForm" class="modal">
+
+      <!-- Initial Popup content -->
+      <div class="front-content">
+        
+        <form id="myForm" autocomplete="off">
+        <p class="Title">
+       (X) Player 1's name: <input type="text" class="formClass" id="form1" required></p>
+
+        <p class="Title">
+         (O) Player 2's name: <input type="text" class="formClass" id="form2" required></p>
+          
+          <label for="1v1" class="Title">Human vs Human:</label>
+          <input type="radio" id="1v1" name="choice" value="1" style="margin-left: 12px; border: 0px; height: 1.5em; width: 1.5em;" required><br>
+          
+          <label for="ai" class="Title" >Human vs Easy AI:</label>
+          <input type="radio" id="ai" name="choice" value="2" style="margin-top: 30px; margin-bottom: 30px; border: 0px; height: 1.5em; width: 1.5em;" required><br>
+
+        <span class="front">Start Game</span>
+        </form>
+      </div>
+    
+    </div>
+
+</body>
+
+
+<script src ="/bower_components/jquery/dist/jquery.js"></script>
+<script src ="/bower_components/mustache/mustache.js"></script>
+<script src="script.js"></script>
+</html>

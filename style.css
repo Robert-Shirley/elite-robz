@@ -1,0 +1,352 @@
+body
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .08fr .08fr .08fr .5fr .1fr;
+    grid-template-areas: 
+    "header header header"
+    "leftMargin displayTurn rightMargin"
+    "leftMargin buttonArea rightMargin"
+    "leftMargin gameboard rightMargin"
+    "footer footer footer"
+    ;
+    background-color: #010a01;
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/12/12/42/wall-2059909_640.png");
+  font-family: "Yellowtail", sans-serif;
+}
+
+header
+{grid-area: header;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
+}
+
+footer
+{grid-area: footer;}
+
+#leftMargin
+{grid-area: leftMargin;
+margin-left: auto;
+margin-right: auto;}
+
+#rightMargin
+{grid-area: rightMargin;
+    margin-left: auto;
+    margin-right: auto;}
+
+.buttonArea
+{grid-area: buttonArea;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  
+  }
+
+#restartButton
+{ display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 40px;
+  transition: all .3s ease-in-out; 
+  height: fit-content;
+  margin-left: 50px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
+      font-family: "Yellowtail", sans-serif;
+
+}
+
+#restartButton:hover { 
+  transform: scale(1.1); 
+  
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
+}
+
+h2{
+  transition: opacity .5s ease;
+}
+
+.fade{
+  opacity: 0;
+}
+
+#resetButton
+{ display: flex;
+  align-content: center;
+  justify-content: center;
+  border-radius: 5px;
+  
+  font-size: 40px;
+  transition: all .3s ease-in-out; 
+  height: fit-content;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
+ font-family: "Yellowtail", sans-serif;
+
+}
+
+#resetButton:hover { 
+  transform: scale(1.1); 
+  
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #5271ff,
+      0 0 82px #5271ff,
+      0 0 92px #5271ff,
+      0 0 102px #5271ff,
+      0 0 151px #5271ff;
+}
+
+.displayTurn
+{grid-area: displayTurn;
+font-size: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fff;
+text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #5271ff,
+    0 0 82px #5271ff,
+    0 0 92px #5271ff,
+    0 0 102px #5271ff,
+    0 0 151px #5271ff;
+}
+
+#game
+{grid-area: gameboard;}
+
+.gameboard
+{
+display: grid;
+height:100vh;
+grid-template-columns: 200px 200px 200px;
+grid-template-rows: 200px 200px 200px;
+}
+
+.box
+{margin: 10px;
+  padding-right: 30px;
+border-radius: 5px;
+background-color: transparent;
+font-size: 120px;
+transition: all .3s ease-in-out; 
+color: transparent;
+border: 0.2rem solid #fff;
+border-radius: 2rem;
+
+box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2.8rem #bc13fe,
+            inset 0 0 1.3rem #bc13fe;
+            font-family: "Yellowtail", sans-serif;
+}
+
+.box.pre-animation1 {
+  color: #fff;
+text-shadow:
+0 0 4px #fff,
+0 0 11px #fff,
+0 0 19px #fff,
+0 0 40px #0fa,
+0 0 80px #0fa,
+0 0 90px #0fa,
+0 0 100px #0fa,
+0 0 150px #0fa;
+}
+.box.pre-animation2 {
+  color: #fff;
+
+  text-shadow:
+  0 0 4px #fff,
+  0 0 11px #fff,
+  0 0 19px #fff,
+  0 0 40px #f09,
+  0 0 80px #f09,
+  0 0 90px #f09,
+  0 0 100px #f09,
+  0 0 150px #f09;
+}
+
+.box:hover { 
+  transform: scale(1.1); 
+  
+  cursor: pointer;
+  background-color: transparent;
+  outline:lightcoral;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 300%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+ 
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: transparent;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 50px;
+  text-align: center;
+  width: 80%; /* Could be more or less, depending on screen size */
+  font-size: 100px;box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 1.0s;
+  border: thin;
+  border-radius: 20px;
+  color: #fff;
+text-shadow:
+   
+    0 0 21px #fff,
+    0 0 42px #5271ff,
+    0 0 82px #5271ff;
+   
+
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.front-content {
+  background-color: transparent;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 50px;
+  border: none;
+  width: 26.5%; /* Could be more or less, depending on screen size */
+  font-size: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 1.0s;
+  border-radius: 0px;
+  display: flex;
+  columns:auto;
+  align-content:space-around;
+  justify-content:space-evenly;
+  color: rgb(255, 255, 255);
+text-shadow:
+    0 0 7px #5271ff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #5271ff;
+  
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+                inset 0 0 1.3rem #bc13fe;
+
+}
+
+.front {
+  color: rgb(255, 248, 248);
+  float:inline-end;
+  margin-left: 120px;
+  margin-top: 100px;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
+.front:hover,
+.front:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Title
+{
+
+margin-bottom: 30px;
+
+}
+
+.formClass
+{
+  height: 30px;
+}
