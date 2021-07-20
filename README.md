@@ -3,6 +3,10 @@ Hello everyone. Relatively new developer here, this is my personal page. Current
 
 Here's a few projects you can check out
 
+Functioning To-Do List (I still wanna refine this and improve it even more)
+
+https://todolist-51103.web.app/
+
 Tic Tac Toe -
 
 https://elite-robz.github.io/TicTacToe/
