@@ -16,11 +16,11 @@ Tic Tac Toe -
 
 https://elite-robz.github.io/TicTacToe/
 
-A Fake Smoothie restaurant landing page. Everything, including the html, is generated with JS. The HTML file is like 1 line long.
+A Fake Smoothie restaurant landing page. Uses webpack to compile the code and make the javascript modular
 
 https://elite-robz.github.io/Restaurant-Page/
 
-Etch-a-sketch thing
+Etch-a-sketch
 
 https://elite-robz.github.io/Etch/
 
