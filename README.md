@@ -3,6 +3,10 @@ Hello everyone. Relatively new developer here, this is my personal page. Current
 
 Here's a few projects you can check out
 
+Cover Letter Generator - Built with react, you can enter information and generate a cover letter. It's easy to switch between the edit and preview mode. I also included a print button. It was also built with some material ui themes
+
+https://elite-robz.github.io/coverlettergenerator/
+
 Functioning To-Do List (I still wanna refine this and improve it even more)
 Created with Firebase/Firestore. It also has User Auth.
 
